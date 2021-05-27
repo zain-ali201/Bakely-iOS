@@ -107,7 +107,7 @@ DEPENDENCIES:
   - TPKeyboardAvoiding
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs:
     - FBSDKCoreKit
     - FBSDKLoginKit
     - Firebase
@@ -155,4 +155,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 4e133dc60c5ff7154691cabe21c145490f237f7b
 
-COCOAPODS: 1.7.1
+COCOAPODS: 1.10.1

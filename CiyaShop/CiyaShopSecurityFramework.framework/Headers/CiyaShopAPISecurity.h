@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 typedef void (^CompletionBlock) (BOOL responseObject);
-typedef void (^DictionaryResponse) (BOOL success, NSString *message, NSDictionary *dictionary);
+typedef void (^DictionaryResponse) (BOOL success, NSString *message, id dictionary);
 
 @interface CiyaShopAPISecurity : NSObject
 
@@ -83,7 +83,14 @@ typedef void (^DictionaryResponse) (BOOL success, NSString *message, NSDictionar
 + (void)getDownloadProducts:(int)userid completionBlock:(DictionaryResponse)completionBlock;
 
 + (void)verifyCustomer:(NSDictionary*)dictParams completionBlock:(DictionaryResponse) completionBlock;
++ (void)resendOTP:(NSDictionary*)dictParams completionBlock:(DictionaryResponse) completionBlock;
+
 + (void)checkDeliveryToPincode:(NSDictionary*)dictParams completionBlock:(DictionaryResponse) completionBlock;
+
++ (void)getStampReviewData:(NSString*)_url params:(NSDictionary*)dictParams completionBlock:(DictionaryResponse) completionBlock;
+
++ (void)postStampReview:(NSDictionary*)dictParams completionBlock:(DictionaryResponse) completionBlock;
+
 
 #pragma mark - Other API calls That can be used for custom calls
 

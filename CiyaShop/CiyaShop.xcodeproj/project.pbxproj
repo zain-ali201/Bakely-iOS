@@ -18,6 +18,8 @@
 		187C5B7322814DB600B46428 /* DownloadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C5B7122814DB600B46428 /* DownloadCell.m */; };
 		187C5B7422814DB600B46428 /* DownloadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187C5B7222814DB600B46428 /* DownloadCell.xib */; };
 		187C5B772281704700B46428 /* DownloadProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C5B762281704700B46428 /* DownloadProduct.m */; };
+		1889470C265F94EA00907763 /* CiyaShopSecurityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1889470B265F94D900907763 /* CiyaShopSecurityFramework.framework */; };
+		1889470D265F94EA00907763 /* CiyaShopSecurityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1889470B265F94D900907763 /* CiyaShopSecurityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		189941A622C08F65001130B8 /* APICallHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 189941A422C08F64001130B8 /* APICallHelper.m */; };
 		18B179ED2260811100E1EA71 /* IntroductionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B179EB2260811100E1EA71 /* IntroductionVC.m */; };
 		18B179EE2260811100E1EA71 /* IntroductionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B179EC2260811100E1EA71 /* IntroductionVC.xib */; };
@@ -315,6 +317,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		1829407A265E61D900B5DD28 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1889470D265F94EA00907763 /* CiyaShopSecurityFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62362D56211321BD00074251 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -357,6 +370,7 @@
 		187C5B7222814DB600B46428 /* DownloadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadCell.xib; sourceTree = "<group>"; };
 		187C5B752281704700B46428 /* DownloadProduct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadProduct.h; sourceTree = "<group>"; };
 		187C5B762281704700B46428 /* DownloadProduct.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadProduct.m; sourceTree = "<group>"; };
+		1889470B265F94D900907763 /* CiyaShopSecurityFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CiyaShopSecurityFramework.framework; sourceTree = "<group>"; };
 		189941A422C08F64001130B8 /* APICallHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APICallHelper.m; sourceTree = "<group>"; };
 		189941A522C08F64001130B8 /* APICallHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APICallHelper.h; sourceTree = "<group>"; };
 		18B179EA2260811100E1EA71 /* IntroductionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroductionVC.h; sourceTree = "<group>"; };
@@ -732,7 +746,6 @@
 		62475DE8209D67FC00A37418 /* Location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = SOURCE_ROOT; };
 		62475DEA209D682600A37418 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		62475DEC209D689A00A37418 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		624B14BA237AD3B000767603 /* CiyaShopSecurityFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CiyaShopSecurityFramework.framework; sourceTree = "<group>"; };
 		6269410E20A2D912007106FF /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		6269410F20A2D912007106FF /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		6269411020A2D912007106FF /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
@@ -796,6 +809,7 @@
 				62BC049B1F1F6709001CA5E6 /* SystemConfiguration.framework in Frameworks */,
 				62BC04991F1F6694001CA5E6 /* SafariServices.framework in Frameworks */,
 				95F24F6BD81D62C4C29A0F6C /* libPods-CiyaShop.a in Frameworks */,
+				1889470C265F94EA00907763 /* CiyaShopSecurityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1545,7 +1559,7 @@
 		FC733A971EA08B9000B1A191 = {
 			isa = PBXGroup;
 			children = (
-				624B14BA237AD3B000767603 /* CiyaShopSecurityFramework.framework */,
+				1889470B265F94D900907763 /* CiyaShopSecurityFramework.framework */,
 				FC733AE01EA0A02C00B1A191 /* PrefixHeader.pch */,
 				623737EE1FB4751C00ED509D /* CiyaShop */,
 				62362D7C21132BA000074251 /* CiyaShopNotification */,
@@ -1597,6 +1611,7 @@
 				781E5772F4A12890FDD3CD7A /* [CP] Copy Pods Resources */,
 				62362D56211321BD00074251 /* Embed App Extensions */,
 				622A582E2177115C00D2CAA2 /* ShellScript */,
+				1829407A265E61D900B5DD28 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2134,8 +2149,8 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = CiyaShopNotification/CiyaShopNotification.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zain Ali (4DB6B756GH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zain Ali (4DB6B756GH)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = Q2ZS4CBGES;
@@ -2151,7 +2166,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sprintsols.Bakely.BakelyNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d0aa4a43-2e49-4866-bec6-28ecd1ba6582";
-				PROVISIONING_PROFILE_SPECIFIER = "SprintDevProfile v1";
+				PROVISIONING_PROFILE_SPECIFIER = "SprintDevProfile v3";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 arm64e i386";
@@ -2169,7 +2184,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = CiyaShopNotification/CiyaShopNotification.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 3;
@@ -2186,7 +2201,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sprintsols.Bakely.BakelyNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d0aa4a43-2e49-4866-bec6-28ecd1ba6582";
-				PROVISIONING_PROFILE_SPECIFIER = "SprintDistProfile v2";
+				PROVISIONING_PROFILE_SPECIFIER = "SprintDistProfile v3";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 arm64e i386";

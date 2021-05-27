@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^CompletionBlock) (BOOL responseObject);
-typedef void (^DictionaryResponse) (BOOL success, NSString *message, NSDictionary *dictionary);
+//typedef void (^DictionaryResponse) (BOOL success, NSString *message, NSDictionary *dictionary);
 
 @interface APICallHelper : NSObject
 
