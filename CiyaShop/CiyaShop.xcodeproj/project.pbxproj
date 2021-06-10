@@ -15,6 +15,7 @@
 		1860ACB0228D24E9003FCE8E /* VariationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1860ACAE228D24E8003FCE8E /* VariationVC.xib */; };
 		186868F122806C950077F66F /* DownloadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 186868EF22806C950077F66F /* DownloadVC.m */; };
 		186868F222806C950077F66F /* DownloadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186868F022806C950077F66F /* DownloadVC.xib */; };
+		1875B0AC26722F02008752B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1875B0AB26722F02008752B9 /* GoogleService-Info.plist */; };
 		187C5B7322814DB600B46428 /* DownloadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C5B7122814DB600B46428 /* DownloadCell.m */; };
 		187C5B7422814DB600B46428 /* DownloadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187C5B7222814DB600B46428 /* DownloadCell.xib */; };
 		187C5B772281704700B46428 /* DownloadProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C5B762281704700B46428 /* DownloadProduct.m */; };
@@ -112,7 +113,6 @@
 		62373A111FB4751E00ED509D /* Ubuntu-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 623738621FB4751C00ED509D /* Ubuntu-MediumItalic.ttf */; };
 		62373A121FB4751E00ED509D /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 623738631FB4751C00ED509D /* Ubuntu-Regular.ttf */; };
 		62373A131FB4751E00ED509D /* UFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 623738641FB4751C00ED509D /* UFL.txt */; };
-		62373A181FB4751E00ED509D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6237386D1FB4751C00ED509D /* GoogleService-Info.plist */; };
 		62373A191FB4751E00ED509D /* AddToCartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 623738711FB4751C00ED509D /* AddToCartData.m */; };
 		62373A1F1FB4751E00ED509D /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 6237387F1FB4751C00ED509D /* Util.m */; };
 		62373A201FB4751E00ED509D /* FaceBookHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 623738821FB4751C00ED509D /* FaceBookHelper.m */; };
@@ -365,6 +365,7 @@
 		186868EE22806C950077F66F /* DownloadVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadVC.h; sourceTree = "<group>"; };
 		186868EF22806C950077F66F /* DownloadVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadVC.m; sourceTree = "<group>"; };
 		186868F022806C950077F66F /* DownloadVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadVC.xib; sourceTree = "<group>"; };
+		1875B0AB26722F02008752B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "CiyaShop/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		187C5B7022814DB600B46428 /* DownloadCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadCell.h; sourceTree = "<group>"; };
 		187C5B7122814DB600B46428 /* DownloadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadCell.m; sourceTree = "<group>"; };
 		187C5B7222814DB600B46428 /* DownloadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadCell.xib; sourceTree = "<group>"; };
@@ -508,7 +509,6 @@
 		623738621FB4751C00ED509D /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
 		623738631FB4751C00ED509D /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		623738641FB4751C00ED509D /* UFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UFL.txt; sourceTree = "<group>"; };
-		6237386D1FB4751C00ED509D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		623738701FB4751C00ED509D /* AddToCartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToCartData.h; sourceTree = "<group>"; };
 		623738711FB4751C00ED509D /* AddToCartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToCartData.m; sourceTree = "<group>"; };
 		6237387E1FB4751C00ED509D /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
@@ -878,7 +878,6 @@
 				623737F61FB4751C00ED509D /* Custom Cells */,
 				6237385A1FB4751C00ED509D /* Font */,
 				623738651FB4751C00ED509D /* FrameWork */,
-				6237386D1FB4751C00ED509D /* GoogleService-Info.plist */,
 				6237386E1FB4751C00ED509D /* Helper Classes */,
 				6237395E1FB4751D00ED509D /* ViewControllers */,
 				6237395A1FB4751D00ED509D /* Info.plist */,
@@ -1035,6 +1034,7 @@
 		623738651FB4751C00ED509D /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				1875B0AB26722F02008752B9 /* GoogleService-Info.plist */,
 				6237386A1FB4751C00ED509D /* google_signin_sdk_4_0_1 */,
 			);
 			path = FrameWork;
@@ -1802,9 +1802,9 @@
 				62373AD61FB4751E00ED509D /* SearchVC.xib in Resources */,
 				62373A4E1FB4751E00ED509D /* Layer 27.png in Resources */,
 				62373AC21FB4751E00ED509D /* HomeShopDataVC.xib in Resources */,
-				62373A181FB4751E00ED509D /* GoogleService-Info.plist in Resources */,
 				62373A001FB4751D00ED509D /* ShopNowCell.xib in Resources */,
 				62373A481FB4751E00ED509D /* Layer 21.png in Resources */,
+				1875B0AC26722F02008752B9 /* GoogleService-Info.plist in Resources */,
 				623739DE1FB4751D00ED509D /* MostPopularProductCell.xib in Resources */,
 				62373A131FB4751E00ED509D /* UFL.txt in Resources */,
 				62373A441FB4751E00ED509D /* Layer 18.png in Resources */,
@@ -2201,7 +2201,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sprintsols.Bakely.BakelyNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d0aa4a43-2e49-4866-bec6-28ecd1ba6582";
-				PROVISIONING_PROFILE_SPECIFIER = "SprintDistProfile v3";
+				PROVISIONING_PROFILE_SPECIFIER = "SprintDistProfile v4";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 arm64e i386";
@@ -2410,7 +2410,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sprintsols.Bakely;
 				PRODUCT_NAME = Bakely;
 				PROVISIONING_PROFILE = "820e1838-d762-41b0-b1dc-a4e26f94e273";
-				PROVISIONING_PROFILE_SPECIFIER = "SprintDistProfile v3";
+				PROVISIONING_PROFILE_SPECIFIER = "SprintDistProfile v4";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				VALID_ARCHS = "arm64 arm64e i386";

@@ -3,36 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>573891001770-oqs5kbbcp1muq4fjbfoqn4ut6cgjiqoi.apps.googleusercontent.com</string>
+	<string>43031425718-a9hgeddce1kdu627rrbkvakgrm75q032.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.573891001770-oqs5kbbcp1muq4fjbfoqn4ut6cgjiqoi</string>
+	<string>com.googleusercontent.apps.43031425718-a9hgeddce1kdu627rrbkvakgrm75q032</string>
 	<key>ANDROID_CLIENT_ID</key>
-	<string>573891001770-3vr595f680ulp7f4g6ci9798as4kgntg.apps.googleusercontent.com</string>
+	<string>43031425718-sb5t3gurb3svmc998d2slip7ngsrfrgs.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBpx8dGNU3DWUth-HgZvjg4rVCNEVSrZFo</string>
+	<string>AIzaSyDEPBNPfPJoXkAZiGba2FBvj1DIqpJo0Fk</string>
 	<key>GCM_SENDER_ID</key>
-	<string>573891001770</string>
+	<string>43031425718</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.CiyaShop</string>
+	<string>com.sprintsols.Bakely</string>
 	<key>PROJECT_ID</key>
-	<string>ios-apps-ddbaa</string>
+	<string>bakely-a072b</string>
 	<key>STORAGE_BUCKET</key>
-	<string>ios-apps-ddbaa.appspot.com</string>
+	<string>bakely-a072b.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:573891001770:ios:c01c80b5f79f3aef</string>
-	<key>DATABASE_URL</key>
-	<string>https://ios-apps-ddbaa.firebaseio.com</string>
+	<string>1:43031425718:ios:1059e72cfb151a1ef12c17</string>
 </dict>
 </plist>

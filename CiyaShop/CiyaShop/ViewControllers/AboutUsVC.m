@@ -31,6 +31,8 @@
 
 @property (strong, nonatomic) IBOutlet UIView *vwAllData;
 @property (strong, nonatomic) IBOutlet UIImageView *imgLogo;
+
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
 @end
 
 @implementation AboutUsVC
@@ -44,45 +46,55 @@
 {
     [super viewDidLoad];
     
-    if([Util getStringData:kAppNameImage] !=nil){
-        
-        [self.imgLogo sd_setImageWithURL:[Util EncodedURL:[Util getStringData:kAppNameImage]] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
-            if (image == nil)
-            {
-                self.imgLogo.image = [UIImage imageNamed:@"LogoContactUs"];
-            }
-            else
-            {
-                self.imgLogo.image = image;
-            }
-        }];
-    }
+    [Util setHeaderColorView:self.vwHeader];
+    self.lblTitle.text = [MCLocalization stringForKey:@"About Us"];
+    self.lblTitle.textColor = OtherTitleColor;
     
-    arrSocialKey = [[NSMutableArray alloc] initWithArray:[appDelegate.dictSocialData allKeys]];
-    arrSocialValues = [[NSMutableArray alloc] init];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://bakely.pk/journey"]]];
     
-    NSMutableArray *arrkey = [[NSMutableArray alloc] init];
-    NSMutableArray *arrValues = [[NSMutableArray alloc] init];
-
-    for (int i = 0; i < arrSocialKey.count; i++)
-    {
-        if (![[appDelegate.dictSocialData valueForKey:[arrSocialKey objectAtIndex:i]] isEqualToString:@""])
-        {
-            [arrkey addObject:[arrSocialKey objectAtIndex:i]];
-            [arrValues addObject:[appDelegate.dictSocialData valueForKey:[arrSocialKey objectAtIndex:i]]];
-        }
-    }
-    arrSocialKey = [[NSMutableArray alloc] initWithArray:arrkey];
-    arrSocialValues = [[NSMutableArray alloc] initWithArray:arrValues];
-
-    [self.colSocial registerNib:[UINib nibWithNibName:@"SocialCell" bundle:nil] forCellWithReuseIdentifier:@"SocialCell"];
+    for (id subview in self.webView.subviews)
+      if ([[subview class] isSubclassOfClass: [UIScrollView class]])
+        ((UIScrollView *)subview).bounces = NO;
     
-    UICollectionViewFlowLayout *layout1 = (UICollectionViewFlowLayout *)[self.colSocial collectionViewLayout];
-    layout1.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(localize) name:MCLocalizationLanguageDidChangeNotification object:nil];
-    [self localize];
-    [self getContentMainData];
+//    if([Util getStringData:kAppNameImage] !=nil){
+//
+//        [self.imgLogo sd_setImageWithURL:[Util EncodedURL:[Util getStringData:kAppNameImage]] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+//            if (image == nil)
+//            {
+//                self.imgLogo.image = [UIImage imageNamed:@"LogoContactUs"];
+//            }
+//            else
+//            {
+//                self.imgLogo.image = image;
+//            }
+//        }];
+//    }
+//
+//    arrSocialKey = [[NSMutableArray alloc] initWithArray:[appDelegate.dictSocialData allKeys]];
+//    arrSocialValues = [[NSMutableArray alloc] init];
+//
+//    NSMutableArray *arrkey = [[NSMutableArray alloc] init];
+//    NSMutableArray *arrValues = [[NSMutableArray alloc] init];
+//
+//    for (int i = 0; i < arrSocialKey.count; i++)
+//    {
+//        if (![[appDelegate.dictSocialData valueForKey:[arrSocialKey objectAtIndex:i]] isEqualToString:@""])
+//        {
+//            [arrkey addObject:[arrSocialKey objectAtIndex:i]];
+//            [arrValues addObject:[appDelegate.dictSocialData valueForKey:[arrSocialKey objectAtIndex:i]]];
+//        }
+//    }
+//    arrSocialKey = [[NSMutableArray alloc] initWithArray:arrkey];
+//    arrSocialValues = [[NSMutableArray alloc] initWithArray:arrValues];
+//
+//    [self.colSocial registerNib:[UINib nibWithNibName:@"SocialCell" bundle:nil] forCellWithReuseIdentifier:@"SocialCell"];
+//
+//    UICollectionViewFlowLayout *layout1 = (UICollectionViewFlowLayout *)[self.colSocial collectionViewLayout];
+//    layout1.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+//
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(localize) name:MCLocalizationLanguageDidChangeNotification object:nil];
+//    [self localize];
+//    [self getContentMainData];
 }
 
 -(void)viewDidLayoutSubviews
@@ -111,7 +123,7 @@
  */
 -(void)localize
 {
-    [Util setHeaderColorView:self.vwHeader];
+    
     self.lblTitle.text = [MCLocalization stringForKey:@"About Us"];
     self.lblTitle.textColor = OtherTitleColor;
     
